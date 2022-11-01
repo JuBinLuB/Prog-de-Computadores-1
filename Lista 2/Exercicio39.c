@@ -15,8 +15,8 @@ int main(void) {
     igual = 0;
     
     for (b = 0; b < a; b++) {
-      if (loteria[b] == loteria[a]) {  //Gera valores aleatórios
-        igual = 1;                     //Sem repetições
+      if (loteria[b] == loteria[a]) {  //Gera valores aleatórios sem repetições.
+        igual = 1;
       }
     }
     
