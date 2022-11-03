@@ -7,7 +7,7 @@ int main(void) {
   int *loteria = malloc(6 * sizeof(int));
   int *jogador = malloc(6 * sizeof(int));
 
-  int a, b, igual;
+  int a = 0, b, igual;
   
   srand(time(NULL));
   do {
