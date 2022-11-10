@@ -11,11 +11,11 @@ int main(void) {
   
   srand(time(NULL));
   do {
-    loteria[a] = rand() % 20;
+    loteria[a] = rand() % 21;
     igual = 0;
     
     for (b = 0; b < a; b++) {
-      if (loteria[b] == loteria[a]) {  //Gera valores aleatórios sem repetições.
+      if (loteria[b] == loteria[a]) {  //Gera valores aleatorios sem repeticoes.
         igual = 1;
       }
     }
@@ -25,7 +25,7 @@ int main(void) {
     }
   } while (a < 6);
   
-  printf ("Faca sua aposta, por valores de 0 a 20...\n\n");
+  printf ("Faca sua aposta, por valores de 1 a 20...\n\n");
   
   for (int i = 0; i < 6; i++) {
     printf ("Digite o %d numero: ", i+1);
