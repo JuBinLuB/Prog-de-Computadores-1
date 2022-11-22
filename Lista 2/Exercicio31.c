@@ -9,11 +9,10 @@ void copiaate(char destino[], char origem[], char parar) {
   if (parar > 'a' && parar < 'z' ||
       parar > 'A' && parar < 'Z') {
         
-        for (i = 0; origem[i] != '\0' && origem[i] != toupper(parar) && origem[i] != tolower(parar); ++i) {
+        for (i = 0; origem[i] != '\0' && origem[i] != toupper(parar) && origem[i] != tolower(parar); i++) {
           destino[i] = origem[i];
         }
         destino[i] = '\0';
-        
   }
 
   printf ("\n");
