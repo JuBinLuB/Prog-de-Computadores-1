@@ -7,16 +7,16 @@ void par_impar(int *x, int tam) {
   int par = 0;
   int imp = 0;
 
-  for (int i = 0; i < tam; ++i) {
+  for (int i = 0; i < tam; i++) {
     if (x[i] % 2 == 0) {
-      ++par;
+      par++;
     } else {
-      ++imp;
+      imp++;
     }
   }
   
   printf ("\nNúmeros pares digitados: %d\n", par);
-  printf ("Números impares digitados: %d\n", imp);
+  printf ("Números ímpares digitados: %d\n", imp);
 }
 
 int main(void) {
@@ -31,7 +31,7 @@ int main(void) {
   int *p = malloc(n * sizeof(int));
 
   printf ("\n");
-  for (int i = 0; i < n; ++i) {
+  for (int i = 0; i < n; i++) {
     printf ("Digite o %dº valor: ", i+1);
     scanf("%d", &p[i]);
   }
