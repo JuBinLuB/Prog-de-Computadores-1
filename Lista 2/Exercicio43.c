@@ -13,6 +13,7 @@ typedef struct {
 void imprime(veiculos *x, int tam) {
 
   printf ("\n\nLista dos veiculos cadastrados:\n");
+
   for (int i = 0; i < tam; i++) {
     printf ("\n%d veiculo:\n", i+1);
     printf ("Condutor: %s\n", x[i].condutor);
@@ -24,10 +25,10 @@ void imprime(veiculos *x, int tam) {
 
 void leitura(veiculos *x, int tam) {
   
-printf ("Faca o cadastro dos veiculos...\n");
+  printf ("Faca o cadastro dos veiculos...\n");
   
   for (int i = 0; i < tam; i++) {
-    printf ("\n%d Veiculo\n", i+1);
+    printf ("\n%d Veiculo:\n", i+1);
     printf ("Nome do condutor: ");
     fflush(stdin);
     scanf ("%s", x[i].condutor);
