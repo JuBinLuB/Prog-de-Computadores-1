@@ -3,9 +3,9 @@
 
 typedef struct {
 
-  char condutor[51];
-  char placa[21];
-  char cor[21];
+  char condutor[50];
+  char placa[20];
+  char cor[20];
   char turno;
 
 } veiculos;
@@ -31,13 +31,13 @@ void leitura(veiculos *x, int tam) {
     printf ("\n%d Veiculo:\n", i+1);
     printf ("Nome do condutor: ");
     fflush(stdin);
-    scanf ("%s", x[i].condutor);
+    scanf ("%49[^\n]", x[i].condutor);
     printf ("Informe a placa: ");
     fflush(stdin);
-    scanf ("%s", x[i].placa);
+    scanf ("%19[^\n]", x[i].placa);
     printf ("Cor do veiculo: ");
     fflush(stdin);
-    scanf ("%s", x[i].cor);
+    scanf ("%19[^\n]", x[i].cor);
     printf ("Turno, m (manha), t (tarde), n (noite) e i (dia inteiro): ");
     fflush(stdin);
     scanf (" %c", &x[i].turno);
