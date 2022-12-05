@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct {
+typedef struct veic_est{
 
   char condutor[50];
   char placa[20];
