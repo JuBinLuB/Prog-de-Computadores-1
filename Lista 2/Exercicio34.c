@@ -12,11 +12,13 @@ int menor(int A[6][6]) {
     if (A[i][i] < menor) {
       menor = A[i][i];
     }
+
     for (int j = 0; j < i; ++j) {
-      printf ("  ");
+      printf("  ");
     }
-    printf ("%d", A[i][i]);
-    printf ("\n");
+
+    printf("%d", A[i][i]);
+    printf("\n");
   }
   
   return menor;
@@ -28,16 +30,16 @@ int main(void) {
 
   srand(time(NULL));
 
-  for (int i = 0; i < 6; ++i) {
-    for (int j = 0; j < 6; ++j) {
+  for (int i = 0; i < 6; i++) {
+    for (int j = 0; j < 6; j++) {
       matriz[i][j] = rand() % 10;
-      printf ("%d ", matriz[i][j]);
+      printf("%d ", matriz[i][j]);
     }
     printf ("\n");
   }
 
-  printf ("\n");
-  printf ("\nMenor elemento da diagonal principal eh: %d.\n", menor(matriz));
-  
+  printf("\n");
+  printf("\nMenor elemento da diagonal principal eh: %d.\n", menor(matriz));
+
   return 0;
 }
