@@ -6,7 +6,7 @@ int ultima(char str[], char c) {
 
   int poc = -1;
   
-  for (int i = 0; str[i] != '\0'; ++i) {
+  for (int i = 0; str[i] != '\0'; i++) {
     if (str[i] == c || str[i] == toupper(c)) {
       poc = i;
     }

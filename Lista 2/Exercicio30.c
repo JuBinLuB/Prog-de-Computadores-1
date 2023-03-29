@@ -3,11 +3,11 @@
 
 int contabranco(char string[]) {
 
-  int contador;
+  int contador = 0;
 
-  for (int i = 0; string[i] != '\0'; ++i) {
+  for (int i = 0; string[i] != '\0'; i++) {
     if (string[i] == ' ') {
-      ++contador;
+      contador++;
     }
   }
 
@@ -21,6 +21,7 @@ int main(void) {
   printf ("Digite uma frase: ");
   fflush (stdin);
   fgets (str, 100, stdin);
+  // scanf("%100[^\n]", str);
 
   printf ("\n%d\n", contabranco(str));
  

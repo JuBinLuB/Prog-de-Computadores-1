@@ -5,9 +5,9 @@ int contc(char str[], char c) {
 
   int contador = 0;
 
-  for (int i = 0; str[i] != '\0'; ++i) {
+  for (int i = 0; str[i] != '\0'; i++) {
     if (str[i] == c || str[i] == c-32) {
-      ++contador;
+      contador++;
     }
   }
   
