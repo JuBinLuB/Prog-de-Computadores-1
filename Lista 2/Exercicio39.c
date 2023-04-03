@@ -50,7 +50,7 @@ int main(void) {
     for (int j = 0; j < 6; j++) {
       if (loteria[i] == jogador[j]) {   //Armazena os corretos.
         correct[k] = jogador[j];
-        ++k;
+        k++;
         break;
       }
     }
@@ -58,7 +58,7 @@ int main(void) {
   
   printf ("\nNumeros sorteados: ");
   
-  for (int i = 0; i < 6; ++i) {
+  for (int i = 0; i < 6; i++) {
     printf ("%d ", loteria[i]);
   }
   
@@ -67,7 +67,7 @@ int main(void) {
   if (contador == 0) {
     printf ("Nenhum acerto!");
   } else {
-    for (int i = 0; i < contador; ++i) {
+    for (int i = 0; i < contador; i++) {
       printf ("%d ", correct[i]);
     }
   }
